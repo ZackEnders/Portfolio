@@ -1,0 +1,15 @@
+.cube {
+  width: 600px;
+  height: 600px;
+}
+.cube-surface {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0.6;
+  background: red;
+}
+.front {
+  transform: translate3d(0, 0, 20px);
+  background: green;
+}
