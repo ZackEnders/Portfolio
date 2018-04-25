@@ -2,19 +2,55 @@
 <html>
 <head>
 	<title>Zack Enders | Web Developer</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 	<script type="text/javascript" src="index.js"></script>
-</head>
-<body>
-  <div class="cube">
-    <div class="cube-surface front">1</div>
-    <div class="cube-surface back">2</div>
-    <div class="cube-surface left">3</div>
-    <div class="cube-surface right">4</div>
-    <div class="cube-surface top">5</div>
-    <div class="cube-surface bottom">6</div>
-  </div>
+	<script type="text/javascript">
+		function home() {
+			document.getElementById('cube').style.transform = "rotateY(0deg)";
+		}
 
-	
+		function aboutMe() {
+			document.getElementById('cube').style.transform = "rotateY(-90deg)";
+		}
+
+		function contact() {
+			document.getElementById('cube').style.transform = "rotateY(90deg)";
+		}
+		function project1() {
+			document.getElementById('cube').style.transform = "rotateX(-90deg)";
+		}
+		function project2() {
+			document.getElementById('cube').style.transform = "rotateX(90deg)";
+		}
+		function project3() {
+			document.getElementById('cube').style.transform = "rotateY(180deg)";
+		}
+
+	</script>
+</head>
+<body>  
+<button id="home" onClick="home();">Home</button>
+<button id="about" onClick="aboutMe();">About</button>
+<button id="contact" onClick="contact();">Contact</button>
+<button id="project1" onClick="project1();">ParkSmart</button>
+<button id="project2" onClick="project2();">SportsTracker</button>
+<button id="project3" onClick="project3();">Hangman</button>
+
+	<div id="container">
+		<div class="perspective">
+		  <div id="cube">
+		    <div class="cube-surface front">1</div>
+		    <div class="cube-surface back">2</div>
+		    <div class="cube-surface left">3</div>
+		    <div class="cube-surface right">4</div>
+		    <div class="cube-surface top">5</div>
+		    <div class="cube-surface bottom">6</div>
+		  </div>
+		</div>
+	</div>
+<div></div>
+
 </body>
 </html>
+
+
