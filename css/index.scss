@@ -1,0 +1,77 @@
+//Size of the cube faces
+$size: 500px;
+
+body {
+  background: black;
+}
+// centers the cube
+#buttons {
+  margin: 0 auto;
+  text-align: center;
+  button {
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    background: black;
+    color: white;
+  }
+}
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s;
+}
+.perspective {
+  display: inline-block;
+  width: $size;
+  height: $size;
+  perspective: 1500px;
+}
+#cube {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  transform: rotateX(-15deg) rotateY(15deg);
+  border-radius: 10px;
+}
+.cube-surface {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  // opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid white;
+  border-radius: 5px;
+}
+.home-face {
+  transform: translate3d(0, 0, $size/2);
+  background-image: url("pic1min.jpg");
+}
+.about-face {
+  transform: rotateY(90deg) translate3d(0, 0, $size/2);
+  background-image: url("bshirt3.min.jpg");
+  background-position: center;
+}
+.contact-face {
+  transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+  background-image: url("pic2min.jpg");
+}
+.project1 {
+  transform: rotateX(90deg) translate3d(0, 0, $size/2);
+  background-image: url("pic1min.jpg");
+}
+.project2 {
+  transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+  background-image: url("pic1min.jpg");
+}
+.project3 {
+  transform: rotateY(180deg) translate3d(0, 0, $size/2);
+  background-image: url("pic1min.jpg");
+}
