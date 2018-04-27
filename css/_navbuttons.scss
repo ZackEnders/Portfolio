@@ -1,29 +1,19 @@
-@keyframes pulse {
-  0% {
-    color: #353839;
-  }
-  50% {
-    color: #88c8bd;
-  }
-  100% {
-    color: #353839;
-  }
-}
+//Logo styling
 #logo {
   position: absolute;
   top: 5px;
   left: 30px;
   color: #353839;
   text-shadow: 1px 1px black;
-  font-size: 28px;
+  // font-size: 28px;
   line-height: 20px;
+  cursor: pointer;
   span {
-    // color: #88c8bd;
-    font-size: 16px;
+    // font-size: 16px;
     animation: pulse 15s infinite;
   }
 }
-
+//Left navbar
 .leftNav {
   position: fixed;
   left: -48%;
@@ -32,28 +22,22 @@
   width: 100%;
   font-family: Helvetica;
   color: #88c8bd;
-  cursor: pointer;
   text-align: center;
-  #home {
-    // color: #353839;
+  .home {
+    cursor: pointer;
     width: 10%;
     margin: 0 5px;
     display: inline-block;
     animation: pulse 15s infinite;
   }
-
-  #about {
-    width: 10%;
-    margin: 0 5px;
-    display: inline-block;
-  }
-  #contact {
+  .navBtns {
+    cursor: pointer;
     width: 10%;
     margin: 0 5px;
     display: inline-block;
   }
 }
-
+//Right navbar
 .rightNav {
   position: fixed;
   right: -48%;
@@ -63,21 +47,24 @@
   font-family: Helvetica;
   text-align: center;
   color: #88c8bd;
-  cursor: pointer;
 
-  #project1 {
+  .navBtnsRight {
+    cursor: pointer;
     width: 15%;
     margin: 0 5px;
     display: inline-block;
   }
-  #project2 {
-    width: 15%;
-    margin: 0 5px;
-    display: inline-block;
+}
+
+//Pulses the font color of the logo and home button
+@keyframes pulse {
+  0% {
+    color: #353839;
   }
-  #project3 {
-    width: 15%;
-    margin: 0 5px;
-    display: inline-block;
+  50% {
+    color: #88c8bd;
+  }
+  100% {
+    color: #353839;
   }
 }

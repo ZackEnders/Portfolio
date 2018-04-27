@@ -3,40 +3,127 @@
 <head>
 	<title>Zack Enders | Web Developer</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 	<script type="text/javascript" src="index.js"></script>
 </head>
-<body>  
-	<div id="logo" onClick="home();"> <span>-Full Stack Developer-</span></div>
-<div id="buttons">
+<body>
+
+<!-- Logo -->
+
+<div id="logo" onClick="home();"> <span>-Full Stack Developer-</span></div>
+
+<!-- Left Nav -->
+
 <div class="leftNav">
-<div id="contact" onClick="contact();">Contact</div>
-<div id="about" onClick="aboutMe();">About</div>
-<div id="home" onClick="home();">Zack Enders</div>
+	<div onClick="contact();" class="navBtns">Contact</div>
+	<div onClick="aboutMe();" class="navBtns">About</div>
+	<div onClick="home();" class="home">Zack Enders</div>
 </div>
+
+<!-- Right Nav -->
+
 <div class="rightNav">
-<div id="project1" onClick="project1();">ParkSmart</div>
-<div id="project2" onClick="project2();">SportsTracker</div>
-<div id="project3" onClick="project3();">Hangman</div>
+	<div onClick="project1();" class="navBtnsRight">ParkSmart</div>
+	<div onClick="project2();" class="navBtnsRight">SportsTracker</div>
+	<div onClick="project3();" class="navBtnsRight">Hangman</div>
 </div>
+
+<!-- Cube container -->
+
+<div id="container">
+	<div class="perspective">
+	  <div id="cube">
+	    <div class="cube-surface home-face"></div>
+	    <div class="cube-surface about-face" id="face"></div>
+	    <div class="cube-surface contact-face"></div>
+	    <div class="cube-surface project1"></div>
+	    <div class="cube-surface project2"></div>
+	    <div class="cube-surface project3"></div>
+	  </div>
+	</div>
 </div>
-	<div id="container">
-		<div class="perspective">
-		  <div id="cube">
-		    <div class="cube-surface home-face"></div>
-		    <div class="cube-surface about-face" id="face">4</div>
-		    <div class="cube-surface contact-face">3</div>
-		    <div class="cube-surface project1">5</div>
-		    <div class="cube-surface project2">6</div>
-		    <div class="cube-surface project3">2</div>
-		  </div>
+
+<!-- Content for each cube -->
+
+<div id="content1">
+
+<!-- About Me Content -->
+
+	<div id="about" class="about">
+
+		<h1>About Me</h1>	
+		<p>I have always loved computers and technology, but I just recently got into web development, and I love it! Few things compare to that “a-ha!” moment after debugging an application or coding out an idea from scratch.</p>
+		<p>
+		I just recently graduated from a coding bootcamp and I'm ready to start my journey as a developer. The New York Code and Design Academy has taught me how to learn new technologies fast and gave me a great foundation in a few languages. I’m actively seeking a role in full-stack web development. If you know of an opportunity that might be a good fit, please say hello!</p>
+		<p>
+		When I’m not at my keyboard, I like going snowboarding, zipping around town on a cruiser board, spending time with friends, building or fixing computers, and attempting to cook new recipes at home, just to name a few. I'm always interested in trying new things and meeting new people! If you want to get to know me more or want to chat about code, head on over to my contact page and send me an email, and we can grab a coffee!</p>
+
+		<h3>Skills</h3>
+	<div class="codeIcons">
+		<ul>
+			<li><i class="devicon-html5-plain-wordmark"></i></li>
+			<li><i class="devicon-css3-plain-wordmark"></i></li>
+			<li><i class="devicon-sass-original"></i></li>
+			<li><i class="devicon-javascript-plain"></i></li>
+			<li><i class="devicon-ruby-plain-wordmark"></i></li>
+			<li><i class="devicon-rails-plain-wordmark"></i></li>
+			<li><i class="devicon-git-plain-wordmark"></i></li>
+			<li><i class="devicon-github-plain"></i></li>
+			<li><i class="devicon-heroku-plain-wordmark"></i></li>
+		</ul>
+		<ul>
+			<h5>Some experience with:</h5>
+			<li>
+				<i class="devicon-bootstrap-plain-wordmark"></i>
+			</li>
+			<li>
+				<i class="devicon-jquery-plain-wordmark"></i>
+			</li>
+			<li>
+				<i class="devicon-wordpress-plain"></i>
+			</li>
+		</ul>
+	</div>
+</div>
+
+	<!-- Contact Content -->
+
+	<div id="contact" class="contact">
+		<h1>Contact Me</h1>
+		<p>If you or your company are looking for a web developer and I seem like a good fit please get in touch!</p>
+
+		<p>If you're interested in connecting, please reach out to me! I'm always looking to meet new people and talk about code. If it has nothing to do with coding, and you just want to grab a cup of coffee and talk about snowboarding or something, that's fine too!<p>
+
+		<p>Call/text or shoot me an email and I'll get back to you as soon as possible!</p>
+
+		
+
+		<!-- Icon Bar -->
+		<div class="contact-icons">
+			<ul>
+				<a href="https://www.linkedin.com/in/zackenders/"><li><img src="css/imgs/phone.png"><br/>814-380-1295</li></a>
+				<a href="mailto:zack@zackenders.com"><li><img src="css/imgs/email.png"><br/><span class="email">zack@zackenders.com</span></li></a>
+				<hr>
+
+				<a href="https://www.linkedin.com/in/zackenders/" target="_blank"><li><img src="css/imgs/linkedin.png"><br/>Linkedin</li></a>
+				<a href="https://github.com/ZackEnders" target="_blank"><li><img src="css/imgs/github.png"><br/>Github</li></a>
+				<a href="files/ZackEndersLivePDF.pdf" download><li><img src="css/imgs/resume.png"><br/>Resume</li></a>
+
+			</ul>
 		</div>
 	</div>
-<div id="content">
-	<div class="about"></div>
-	<div class="contact"></div>
-	<div class="project1"></div>
-	<div class="project2"></div>
-	<div class="project3"></div>
+</div>
+
+<div id="content2">
+	<!-- ParkSmart Content -->
+
+	<div id="project1"></div>
+
+	<div id="project2"></div>
+
+	<div id="project3"></div>
+</div>
 </div>
 
 </body>
