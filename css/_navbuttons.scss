@@ -1,20 +1,27 @@
+@keyframes pulse {
+  0% {
+    color: #353839;
+  }
+  50% {
+    color: #88c8bd;
+  }
+  100% {
+    color: #353839;
+  }
+}
 #logo {
   position: absolute;
   top: 5px;
-  right: 50px;
+  left: 30px;
   color: #353839;
   text-shadow: 1px 1px black;
   font-size: 28px;
-  transition: transform 1s;
+  line-height: 20px;
   span {
-    color: #88c8bd;
+    // color: #88c8bd;
     font-size: 16px;
+    animation: pulse 15s infinite;
   }
-}
-
-#buttons {
-  margin: 0 auto;
-  text-align: center;
 }
 
 .leftNav {
@@ -24,18 +31,25 @@
   transform: rotateZ(-90deg);
   width: 100%;
   font-family: Helvetica;
-  margin: 0 auto;
   color: #88c8bd;
+  cursor: pointer;
+  text-align: center;
   #home {
-    width: 18%;
+    // color: #353839;
+    width: 10%;
+    margin: 0 5px;
     display: inline-block;
+    animation: pulse 15s infinite;
   }
+
   #about {
-    width: 18%;
+    width: 10%;
+    margin: 0 5px;
     display: inline-block;
   }
   #contact {
-    width: 18%;
+    width: 10%;
+    margin: 0 5px;
     display: inline-block;
   }
 }
@@ -49,16 +63,21 @@
   font-family: Helvetica;
   text-align: center;
   color: #88c8bd;
+  cursor: pointer;
+
   #project1 {
-    width: 18%;
+    width: 15%;
+    margin: 0 5px;
     display: inline-block;
   }
   #project2 {
-    width: 18%;
+    width: 15%;
+    margin: 0 5px;
     display: inline-block;
   }
   #project3 {
-    width: 18%;
+    width: 15%;
+    margin: 0 5px;
     display: inline-block;
   }
 }

@@ -22,23 +22,33 @@ $size: 500px;
   transform-style: preserve-3d;
   transition: transform 1s;
   transform: rotateY(15deg);
-  // border-radius: 10px;
 }
 .cube-surface {
   overflow: hidden;
   width: inherit;
   height: inherit;
   position: absolute;
-  // opacity: 1s;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid white;
   border-radius: 3px;
+  animation: borderPulse 15s infinite;
+  backface-visibility: hidden;
 }
 .home-face {
   transform: translate3d(0, 0, $size/2);
-  background-image: url("imgs/Background2.jpg");
+  background-image: url("imgs/Background2-min.jpg");
   background-position: center;
+}
+@keyframes borderPulse {
+  0% {
+    border: 3px solid #353839;
+  }
+  50% {
+    border: 3px solid #88c8bd;
+  }
+  100% {
+    border: 3px solid #353839;
+  }
 }
 .about-face {
   transform: rotateY(90deg) translate3d(0, 0, $size/2);
@@ -46,7 +56,7 @@ $size: 500px;
   -moz-transform: rotateY(90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateY(90deg) translate3d(0, 0, $size/2);
   -o-transform: rotateY(90deg) translate3d(0, 0, $size/2);
-  background-image: url("imgs/bshirt3.min.jpg");
+  background-image: url("imgs/bshirt3.min-min.jpg");
   background-position: center;
 }
 .contact-face {
@@ -55,7 +65,7 @@ $size: 500px;
   -moz-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
   -o-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
-  background-image: url("imgs/contact.jpg");
+  background-image: url("imgs/contact-min.jpg");
 }
 .project1 {
   transform: rotateX(90deg) translate3d(0, 0, $size/2);
@@ -63,7 +73,7 @@ $size: 500px;
   -moz-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   -o-transform: rotateX(90deg) translate3d(0, 0, $size/2);
-  background-image: url("imgs/parksmart.jpg");
+  background-image: url("imgs/parksmart-min.jpg");
 }
 .project2 {
   transform: rotateX(-90deg) translate3d(0, 0, $size/2);
@@ -71,7 +81,7 @@ $size: 500px;
   -moz-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   -o-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
-  background-image: url("imgs/sportstracker.jpg");
+  background-image: url("imgs/sportstracker-min.jpg");
 }
 .project3 {
   transform: rotateY(180deg) translate3d(0, 0, $size/2);
@@ -79,5 +89,5 @@ $size: 500px;
   -moz-transform: rotateY(180deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateY(180deg) translate3d(0, 0, $size/2);
   -o-transform: rotateY(180deg) translate3d(0, 0, $size/2);
-  background-image: url("imgs/hangman.jpg");
+  background-image: url("imgs/hangman-min.jpg");
 }
