@@ -1,0 +1,83 @@
+//Size of the cube faces
+$size: 500px;
+// centers the cube
+
+#container {
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s;
+}
+.perspective {
+  display: inline-block;
+  width: $size;
+  height: $size;
+  perspective: 1500px;
+}
+#cube {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform: rotateY(15deg);
+  // border-radius: 10px;
+}
+.cube-surface {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  // opacity: 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+.home-face {
+  transform: translate3d(0, 0, $size/2);
+  background-image: url("imgs/Background2.jpg");
+  background-position: center;
+}
+.about-face {
+  transform: rotateY(90deg) translate3d(0, 0, $size/2);
+  -webkit-transform: rotateY(90deg) translate3d(0, 0, $size/2);
+  -moz-transform: rotateY(90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateY(90deg) translate3d(0, 0, $size/2);
+  -o-transform: rotateY(90deg) translate3d(0, 0, $size/2);
+  background-image: url("imgs/bshirt3.min.jpg");
+  background-position: center;
+}
+.contact-face {
+  transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+  -webkit-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+  -moz-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+  -o-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
+  background-image: url("imgs/contact.jpg");
+}
+.project1 {
+  transform: rotateX(90deg) translate3d(0, 0, $size/2);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, $size/2);
+  -moz-transform: rotateX(90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateX(90deg) translate3d(0, 0, $size/2);
+  -o-transform: rotateX(90deg) translate3d(0, 0, $size/2);
+  background-image: url("imgs/parksmart.jpg");
+}
+.project2 {
+  transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+  -webkit-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+  -moz-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+  -o-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
+  background-image: url("imgs/sportstracker.jpg");
+}
+.project3 {
+  transform: rotateY(180deg) translate3d(0, 0, $size/2);
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, $size/2);
+  -moz-transform: rotateY(180deg) translate3d(0, 0, $size/2);
+  -ms-transform: rotateY(180deg) translate3d(0, 0, $size/2);
+  -o-transform: rotateY(180deg) translate3d(0, 0, $size/2);
+  background-image: url("imgs/hangman.jpg");
+}

@@ -1,0 +1,64 @@
+#logo {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  color: #353839;
+  text-shadow: 1px 1px black;
+  font-size: 28px;
+  transition: transform 1s;
+  span {
+    color: #88c8bd;
+    font-size: 16px;
+  }
+}
+
+#buttons {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.leftNav {
+  position: fixed;
+  left: -48%;
+  top: 50%;
+  transform: rotateZ(-90deg);
+  width: 100%;
+  font-family: Helvetica;
+  margin: 0 auto;
+  color: #88c8bd;
+  #home {
+    width: 18%;
+    display: inline-block;
+  }
+  #about {
+    width: 18%;
+    display: inline-block;
+  }
+  #contact {
+    width: 18%;
+    display: inline-block;
+  }
+}
+
+.rightNav {
+  position: fixed;
+  right: -48%;
+  top: 50%;
+  transform: rotateZ(-90deg);
+  width: 100%;
+  font-family: Helvetica;
+  text-align: center;
+  color: #88c8bd;
+  #project1 {
+    width: 18%;
+    display: inline-block;
+  }
+  #project2 {
+    width: 18%;
+    display: inline-block;
+  }
+  #project3 {
+    width: 18%;
+    display: inline-block;
+  }
+}

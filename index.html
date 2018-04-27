@@ -2,23 +2,28 @@
 <html>
 <head>
 	<title>Zack Enders | Web Developer</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>  
+	<div id="logo">Zack Enders <span>-Full Stack Developer-</span></div>
 <div id="buttons">
-<button id="home" onClick="home();">Home</button>
-<button id="about" onClick="aboutMe();">About</button>
-<button id="contact" onClick="contact();">Contact</button>
-<button id="project1" onClick="project1();">ParkSmart</button>
-<button id="project2" onClick="project2();">SportsTracker</button>
-<button id="project3" onClick="project3();">Hangman</button>
+<div class="leftNav">
+<div id="contact" onClick="contact();">Contact</div>
+<div id="about" onClick="aboutMe();">About</div>
+<div id="home" onClick="home();">Home</div>
+</div>
+<div class="rightNav">
+<div id="project1" onClick="project1();">ParkSmart</div>
+<div id="project2" onClick="project2();">SportsTracker</div>
+<div id="project3" onClick="project3();">Hangman</div>
+</div>
 </div>
 	<div id="container">
 		<div class="perspective">
 		  <div id="cube">
-		    <div class="cube-surface home-face">1</div>
-		    <div class="cube-surface about-face">4</div>
+		    <div class="cube-surface home-face"></div>
+		    <div class="cube-surface about-face" id="face">4</div>
 		    <div class="cube-surface contact-face">3</div>
 		    <div class="cube-surface project1">5</div>
 		    <div class="cube-surface project2">6</div>
@@ -26,7 +31,13 @@
 		  </div>
 		</div>
 	</div>
-<div></div>
+<div id="content">
+	<div class="about"></div>
+	<div class="contact"></div>
+	<div class="project1"></div>
+	<div class="project2"></div>
+	<div class="project3"></div>
+</div>
 
 </body>
 </html>
