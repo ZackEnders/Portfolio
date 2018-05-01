@@ -1,61 +1,58 @@
 //Logo styling
-#logo {
-  position: absolute;
-  top: 5px;
-  left: 30px;
-  color: #353839;
-  text-shadow: 1px 1px black;
-  // font-size: 28px;
-  line-height: 20px;
-  cursor: pointer;
-  span {
-    // font-size: 16px;
-    animation: pulse 15s infinite;
-  }
-}
-//Left navbar
-.leftNav {
-  position: fixed;
-  left: -48%;
-  top: 50%;
-  transform: rotateZ(-90deg);
-  width: 100%;
-  font-family: Helvetica;
+
+#navBar {
   color: #88c8bd;
   text-align: center;
-  .home {
-    cursor: pointer;
-    width: 10%;
-    margin: 0 5px;
-    display: inline-block;
-    animation: pulse 15s infinite;
-  }
+  border-bottom: 1px solid #353839;
+  border-top: 1px solid #353839;
+  height: 70px;
+
+  padding: 10px 0 2px;
+  margin-top: 10px;
   .navBtns {
-    cursor: pointer;
-    width: 10%;
-    margin: 0 5px;
     display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+    padding: 10px;
+    width: 20%;
+  }
+  #logo {
+    text-align: center;
+    color: #353839;
+    text-shadow: 1px 1px black;
+    display: inline-block;
+    width: 20%;
+    cursor: pointer;
+    height: 69px;
+
+    h1 {
+      display: inline-block;
+      margin: 0;
+      line-height: 35px;
+      color: #88c8bd;
+      // line-height: 30px;
+    }
+    span {
+      line-height: 35px;
+      font-size: 16px;
+      animation: pulse 15s infinite;
+    }
   }
 }
-//Right navbar
+.leftNav {
+  display: inline-block;
+  text-align: right;
+  // border: 2px solid yellow;
+  line-height: 20px;
+  width: 38%;
+}
 .rightNav {
-  position: fixed;
-  right: -48%;
-  top: 50%;
-  transform: rotateZ(-90deg);
-  width: 100%;
-  font-family: Helvetica;
-  text-align: center;
-  color: #88c8bd;
-
-  .navBtnsRight {
-    cursor: pointer;
-    width: 15%;
-    margin: 0 5px;
-    display: inline-block;
-  }
+  display: inline-block;
+  text-align: left;
+  // border: 2px solid yellow;
+  line-height: 35px;
+  width: 38%;
 }
-
 //Pulses the font color of the logo and home button
 @keyframes pulse {
   0% {

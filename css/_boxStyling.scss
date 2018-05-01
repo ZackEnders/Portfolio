@@ -4,8 +4,8 @@ $size: 500px;
 
 #container {
   position: absolute;
-  top: 48%;
-  left: 45%;
+  top: 57%;
+  left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 1s;
 }
@@ -21,7 +21,7 @@ $size: 500px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
-  transform: rotateY(15deg);
+  // transform: rotateY(15deg);
 }
 .cube-surface {
   overflow: hidden;
