@@ -67,7 +67,7 @@ function displayed() {
 
 function home() {
 	displayed();
-	document.getElementById("cube").style.transform = "rotateY(15deg)";
+	// document.getElementById("cube").style.transform = "rotateY(15deg)";
 	document.getElementById("container").style.transform =
 		"translate(-50%, -50%)";
 }
@@ -76,7 +76,7 @@ function aboutMe() {
 	displayed();
 	document.getElementById("cube").style.transform = "rotateY(-90deg)";
 	document.getElementById("container").style.transform =
-		"translate(-100%, -48%)";
+		"translate(-118%, -48%)";
 	document.getElementById("content1").style.display = "block";
 	document.getElementById("about").style.display = "block";
 }
@@ -85,28 +85,28 @@ function contact() {
 	displayed();
 	document.getElementById("cube").style.transform = "rotateY(90deg)";
 	document.getElementById("container").style.transform =
-		"translate(-100%, -48%)";
+		"translate(-118%, -48%)";
 	document.getElementById("content1").style.display = "block";
 	document.getElementById("contact").style.display = "block";
 }
 function project1() {
 	displayed();
 	document.getElementById("cube").style.transform = "rotateX(-90deg)";
-	document.getElementById("container").style.transform = "translate(30%, -48%)";
+	document.getElementById("container").style.transform = "translate(12%, -48%)";
 	document.getElementById("content2").style.display = "block";
 	document.getElementById("project1").style.display = "block";
 }
 function project2() {
 	displayed();
 	document.getElementById("cube").style.transform = "rotateX(90deg)";
-	document.getElementById("container").style.transform = "translate(30%, -48%)";
+	document.getElementById("container").style.transform = "translate(12%, -48%)";
 	document.getElementById("content2").style.display = "block";
 	document.getElementById("project2").style.display = "block";
 }
 function project3() {
 	displayed();
 	document.getElementById("cube").style.transform = "rotateY(180deg)";
-	document.getElementById("container").style.transform = "translate(30%, -48%)";
+	document.getElementById("container").style.transform = "translate(12%, -48%)";
 	document.getElementById("content2").style.display = "block";
 	document.getElementById("project3").style.display = "block";
 }

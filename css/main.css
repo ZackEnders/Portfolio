@@ -357,7 +357,7 @@ template {
   -o-transform: rotateY(-90deg) translate3d(0, 0, 250px);
   background-image: url("imgs/contact-min.jpg"); }
 
-.project1 {
+.project1-face {
   transform: rotateX(90deg) translate3d(0, 0, 250px);
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 250px);
   -moz-transform: rotateX(90deg) translate3d(0, 0, 250px);
@@ -365,7 +365,7 @@ template {
   -o-transform: rotateX(90deg) translate3d(0, 0, 250px);
   background-image: url("imgs/parksmart-min.jpg"); }
 
-.project2 {
+.project2-face {
   transform: rotateX(-90deg) translate3d(0, 0, 250px);
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 250px);
   -moz-transform: rotateX(-90deg) translate3d(0, 0, 250px);
@@ -373,7 +373,7 @@ template {
   -o-transform: rotateX(-90deg) translate3d(0, 0, 250px);
   background-image: url("imgs/sportstracker-min.jpg"); }
 
-.project3 {
+.project3-face {
   transform: rotateY(180deg) translate3d(0, 0, 250px);
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 250px);
   -moz-transform: rotateY(180deg) translate3d(0, 0, 250px);
@@ -432,18 +432,11 @@ template {
     color: #88c8bd; }
   100% {
     color: #353839; } }
-@keyframes blur {
-  0% {
-    opacity: 0.4;
-    text-shadow: 0 0 3px #ffffff, 3px 0 3px #ffffff, 0 3px 3px #ffffff, -3px 0 3px #ffffff, 0 -3px 3px #ffffff; }
-  100% {
-    opacity: 1;
-    text-shadow: 0 0 0px #000000; } }
 #content1 {
   display: none;
   animation: fadeIn 2.2s linear;
   position: absolute;
-  top: 48%;
+  top: 56.5%;
   left: 42%;
   transform: translate(25%, -48%);
   width: 596px;
@@ -452,11 +445,15 @@ template {
   color: #ece8e3; }
   #content1 .about {
     display: none;
-    animation: blur 3s linear;
-    margin: 5px 15px; }
+    animation: blur 1s linear, fadeIn 2.2s linear;
+    margin: 0 30px;
+    text-align: justify; }
     #content1 .about h1 {
       text-align: center; }
     #content1 .about h3 {
+      text-align: center; }
+    #content1 .about h5 {
+      margin: 0;
       text-align: center; }
     #content1 .about .codeIcons {
       margin: 0 auto; }
@@ -471,8 +468,9 @@ template {
         color: #88c8bd; }
   #content1 .contact {
     display: none;
-    animation: blur 3s linear;
-    margin: 60px 30px; }
+    animation: blur 1s linear, fadeIn 2.2s linear;
+    margin: 60px 30px;
+    text-align: justify; }
     #content1 .contact .contact-icons {
       position: absolute;
       bottom: 5%;
@@ -483,7 +481,7 @@ template {
       list-style: none;
       text-align: center;
       padding: 0;
-      font-size: 12px; }
+      font-size: 14px; }
       #content1 .contact ul hr {
         margin: 30px 0;
         width: 500px;
@@ -499,8 +497,6 @@ template {
           margin: 0 40px;
           text-align: center;
           line-height: 25px; }
-          #content1 .contact ul a li .email {
-            font-size: 12px; }
           #content1 .contact ul a li img {
             width: 35px;
             height: 35px; }
@@ -509,13 +505,86 @@ template {
   display: none;
   animation: fadeIn 2.2s linear;
   position: absolute;
-  top: 48%;
-  right: 45%;
+  top: 56.5%;
+  right: 42%;
   transform: translate(-30%, -49%);
   width: 550px;
   height: 600px;
-  color: white; }
+  border: 2px solid #88c8bd;
+  color: #ece8e3; }
+  #content2 .project1 {
+    display: none;
+    margin: 0 30px;
+    animation: blur 1s linear, fadeIn 2.2s linear; }
+    #content2 .project1 h1 {
+      text-align: center; }
+    #content2 .project1 h4 {
+      line-height: 30px; }
+    #content2 .project1 p {
+      line-height: 30px;
+      text-align: justify; }
+  #content2 .project2 {
+    display: none;
+    margin: 0 30px;
+    animation: blur 1s linear, fadeIn 2.2s linear; }
+    #content2 .project2 h1 {
+      text-align: center; }
+    #content2 .project2 h4 {
+      line-height: 30px; }
+    #content2 .project2 p {
+      line-height: 30px;
+      text-align: justify; }
+  #content2 .project3 {
+    display: none;
+    margin: 0 30px;
+    animation: blur 1s linear, fadeIn 2.2s linear; }
+    #content2 .project3 h1 {
+      text-align: center; }
+    #content2 .project3 h4 {
+      line-height: 30px; }
+    #content2 .project3 p {
+      line-height: 30px;
+      text-align: justify; }
 
+.projectLinks {
+  text-align: center; }
+
+.liveLink {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px dotted #0d0d0d;
+  line-height: 20px;
+  background-color: #88c8bd; }
+  .liveLink a {
+    display: block;
+    text-decoration: none;
+    color: #0d0d0d;
+    padding: 10px; }
+
+.codeLink {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px dotted #88c8bd;
+  line-height: 20px; }
+  .codeLink a {
+    display: block;
+    text-decoration: none;
+    color: #88c8bd;
+    padding: 10px; }
+
+@keyframes blur {
+  0% {
+    opacity: 0.4;
+    text-shadow: 0 0 3px #ffffff, 3px 0 3px #ffffff, 0 3px 3px #ffffff, -3px 0 3px #ffffff, 0 -3px 3px #ffffff; }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0px #000000; } }
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -523,13 +592,6 @@ template {
     opacity: 0.7; }
   100% {
     opacity: 1; } }
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0.7; }
-  100% {
-    opacity: 0; } }
 body {
   background-color: #0d0d0d; }
 

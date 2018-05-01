@@ -67,7 +67,7 @@ $size: 500px;
   -o-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
   background-image: url("imgs/contact-min.jpg");
 }
-.project1 {
+.project1-face {
   transform: rotateX(90deg) translate3d(0, 0, $size/2);
   -webkit-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   -moz-transform: rotateX(90deg) translate3d(0, 0, $size/2);
@@ -75,7 +75,7 @@ $size: 500px;
   -o-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   background-image: url("imgs/parksmart-min.jpg");
 }
-.project2 {
+.project2-face {
   transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   -moz-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
@@ -83,7 +83,7 @@ $size: 500px;
   -o-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   background-image: url("imgs/sportstracker-min.jpg");
 }
-.project3 {
+.project3-face {
   transform: rotateY(180deg) translate3d(0, 0, $size/2);
   -webkit-transform: rotateY(180deg) translate3d(0, 0, $size/2);
   -moz-transform: rotateY(180deg) translate3d(0, 0, $size/2);
