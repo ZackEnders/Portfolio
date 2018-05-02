@@ -67,7 +67,7 @@ function displayed() {
 
 function home() {
 	displayed();
-	// document.getElementById("cube").style.transform = "rotateY(15deg)";
+	document.getElementById("cube").style.transform = "rotateY(0deg)";
 	document.getElementById("container").style.transform =
 		"translate(-50%, -50%)";
 }

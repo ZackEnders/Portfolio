@@ -1,11 +1,11 @@
 // Content box styling for about and contact
 #content1 {
 	display: none;
-
+	background-color: rgba(0, 0, 0, 0.8);
 	animation: fadeIn 2.2s linear;
 
 	position: absolute;
-	top: 56.5%;
+	top: 55%;
 	left: 42%;
 	transform: translate(25%, -48%);
 
@@ -14,6 +14,8 @@
 
 	border: 2px solid #88c8bd;
 	color: #ece8e3;
+	z-index: -10;
+	border-radius: 3px;
 
 	.about {
 		display: none;
@@ -93,14 +95,17 @@
 #content2 {
 	display: none;
 	animation: fadeIn 2.2s linear;
+	background-color: rgba(0, 0, 0, 0.8);
 	position: absolute;
-	top: 56.5%;
+	top: 55%;
 	right: 42%;
 	transform: translate(-30%, -49%);
 	width: 550px;
 	height: 600px;
 	border: 2px solid #88c8bd;
 	color: #ece8e3;
+	z-index: -10;
+	border-radius: 3px;
 
 	.project1 {
 		display: none;

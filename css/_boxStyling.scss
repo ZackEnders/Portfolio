@@ -4,10 +4,11 @@ $size: 500px;
 
 #container {
   position: absolute;
-  top: 57%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 1s;
+  z-index: -10;
 }
 .perspective {
   display: inline-block;
@@ -21,7 +22,7 @@ $size: 500px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
-  // transform: rotateY(15deg);
+  // transform: rotateY(-50deg);
 }
 .cube-surface {
   overflow: hidden;
@@ -36,18 +37,18 @@ $size: 500px;
 }
 .home-face {
   transform: translate3d(0, 0, $size/2);
-  background-image: url("imgs/Background2-min.jpg");
-  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
+
 @keyframes borderPulse {
   0% {
-    border: 3px solid #353839;
+    border: 2px solid #353839;
   }
   50% {
-    border: 3px solid #88c8bd;
+    border: 2px solid #88c8bd;
   }
   100% {
-    border: 3px solid #353839;
+    border: 2px solid #353839;
   }
 }
 .about-face {
