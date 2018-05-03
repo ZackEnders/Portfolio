@@ -319,7 +319,6 @@ template {
   transition: transform 1s; }
 
 .cube-surface {
-  overflow: hidden;
   width: inherit;
   height: inherit;
   position: absolute;
@@ -680,6 +679,7 @@ html {
   font-family: Helvetica; }
 
 body {
+  overflow: hidden;
   background-image: url("imgs/bg.jpg");
   background-position: center;
   background-attachment: fixed;
