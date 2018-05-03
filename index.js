@@ -50,10 +50,6 @@ function closeLogo() {
 					document.getElementById("logo").style.display = "none";
 				}, 770);
 				break;
-			default:
-				document.getElementById("logo").style.animation =
-					"grow 0.8s linear, fadeIn 3s linear";
-				document.getElementById("logo").style.display = "inline-block";
 		}
 	}, 200);
 }
