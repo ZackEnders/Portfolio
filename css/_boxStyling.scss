@@ -22,7 +22,7 @@ $size: 500px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
-  // transform: rotateY(-50deg);
+  // animation: spincube 4s infinite;
 }
 .cube-surface {
   overflow: hidden;
@@ -35,11 +35,49 @@ $size: 500px;
   animation: borderPulse 15s infinite;
   backface-visibility: hidden;
 }
+.namePlate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #88c8bd;
+  font-family: Perpetua;
+  h1 {
+    margin: 0;
+    font-size: 44px;
+  }
+  h4 {
+    animation: pulse 15s infinite;
+    margin: 0;
+  }
+}
 .home-face {
   transform: translate3d(0, 0, $size/2);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
+@keyframes spincube {
+  16% {
+    -ms-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  33% {
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  50% {
+    -ms-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+  66% {
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  83% {
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
 @keyframes borderPulse {
   0% {
     border: 2px solid #353839;

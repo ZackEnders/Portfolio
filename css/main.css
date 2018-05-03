@@ -329,10 +329,41 @@ template {
   animation: borderPulse 15s infinite;
   backface-visibility: hidden; }
 
+.namePlate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #88c8bd;
+  font-family: Perpetua; }
+  .namePlate h1 {
+    margin: 0;
+    font-size: 44px; }
+  .namePlate h4 {
+    animation: pulse 15s infinite;
+    margin: 0; }
+
 .home-face {
   transform: translate3d(0, 0, 250px);
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.8); }
 
+@keyframes spincube {
+  16% {
+    -ms-transform: rotateY(-90deg);
+    transform: rotateY(-90deg); }
+  33% {
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg); }
+  50% {
+    -ms-transform: rotateX(-90deg);
+    transform: rotateX(-90deg); }
+  66% {
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg); }
+  83% {
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg); } }
 @keyframes borderPulse {
   0% {
     border: 2px solid #353839; }
@@ -381,12 +412,13 @@ template {
   -o-transform: rotateY(180deg) translate3d(0, 0, 250px);
   background-image: url("imgs/hangman-min.jpg"); }
 
-#navBar {
+nav {
   color: #88c8bd;
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
-  border-top: 2px solid #88c8bd; }
-  #navBar .navBtns {
+  border-top: 2px solid #88c8bd;
+  font-family: Perpetua; }
+  nav .navBtns {
     display: inline-block;
     text-align: center;
     padding: 10px;
@@ -396,44 +428,61 @@ template {
     border-right: 1px solid #88c8bd;
     border-bottom: 1px solid #88c8bd;
     border-radius: 3px; }
-  #navBar .navBtns:hover {
+  nav .navBtns:hover {
     background-color: #88c8bd;
     color: black;
     cursor: pointer; }
-  #navBar #logo {
+  nav #logo {
+    display: none;
     text-align: center;
     color: #88c8bd;
     text-shadow: 1px 1px black;
-    display: inline-block;
     width: 20%;
     cursor: pointer;
-    vertical-align: 9px;
     padding: 8px 2px;
     border-left: 1px solid #88c8bd;
     border-right: 1px solid #88c8bd;
     border-bottom: 1px solid #88c8bd;
     border-radius: 3px;
-    background-color: black; }
-    #navBar #logo h1 {
+    background-color: black;
+    overflow: hidden; }
+    nav #logo h1 {
       display: inline-block;
-      margin: 0; }
-    #navBar #logo span {
+      margin: 0;
+      white-space: nowrap; }
+    nav #logo h4 {
+      margin: 0;
       color: #353839;
       animation: pulse 15s infinite;
-      font-size: 14px; }
+      font-size: 14px;
+      white-space: nowrap; }
 
 .leftNav {
   display: inline-block;
   text-align: right;
-  vertical-align: 43px;
+  vertical-align: 45px;
   width: 38%; }
 
 .rightNav {
   display: inline-block;
   text-align: left;
-  vertical-align: 43px;
+  vertical-align: 45px;
   width: 38%; }
 
+@keyframes grow {
+  0% {
+    width: 0%; }
+  50% {
+    width: 10%; }
+  100% {
+    width: 20%; } }
+@keyframes shrink {
+  0% {
+    width: 20%; }
+  50% {
+    width: 10%; }
+  100% {
+    width: 0%; } }
 @keyframes pulse {
   0% {
     color: #353839; }
@@ -461,34 +510,44 @@ template {
     margin: 0 30px;
     text-align: justify; }
     #content1 .about h1 {
-      text-align: center; }
+      text-align: center;
+      font-family: Perpetua;
+      margin-bottom: 0; }
     #content1 .about h3 {
-      text-align: center; }
+      margin: 0;
+      text-align: center;
+      font-family: Perpetua; }
     #content1 .about h5 {
       margin: 0;
-      text-align: center; }
+      text-align: center;
+      font-family: Perpetua; }
+    #content1 .about p {
+      line-height: 22px; }
     #content1 .about .codeIcons {
       margin: 0 auto; }
     #content1 .about ul {
       padding: 0;
+      margin: 10px;
       list-style: none;
       text-align: center; }
       #content1 .about ul li {
         display: inline-block;
-        font-size: 42px;
-        margin: 0 5px;
-        color: #88c8bd; }
+        font-size: 40px;
+        margin: 0 5px; }
   #content1 .contact {
     display: none;
     animation: blur 1s linear, fadeIn 2.2s linear;
-    margin: 60px 30px;
+    margin: 0 30px;
     text-align: justify; }
     #content1 .contact .contact-icons {
       position: absolute;
       bottom: 5%;
       left: 50px; }
     #content1 .contact h1 {
-      text-align: center; }
+      text-align: center;
+      font-family: Perpetua; }
+    #content1 .contact p {
+      line-height: 30px; }
     #content1 .contact ul {
       list-style: none;
       text-align: center;
@@ -532,7 +591,8 @@ template {
     margin: 0 30px;
     animation: blur 1s linear, fadeIn 2.2s linear; }
     #content2 .project1 h1 {
-      text-align: center; }
+      text-align: center;
+      font-family: Perpetua; }
     #content2 .project1 h4 {
       line-height: 30px; }
     #content2 .project1 p {
@@ -543,7 +603,8 @@ template {
     margin: 0 30px;
     animation: blur 1s linear, fadeIn 2.2s linear; }
     #content2 .project2 h1 {
-      text-align: center; }
+      text-align: center;
+      font-family: Perpetua; }
     #content2 .project2 h4 {
       line-height: 30px; }
     #content2 .project2 p {
@@ -554,7 +615,8 @@ template {
     margin: 0 30px;
     animation: blur 1s linear, fadeIn 2.2s linear; }
     #content2 .project3 h1 {
-      text-align: center; }
+      text-align: center;
+      font-family: Perpetua; }
     #content2 .project3 h4 {
       line-height: 30px; }
     #content2 .project3 p {
@@ -607,12 +669,20 @@ template {
     opacity: 0.7; }
   100% {
     opacity: 1; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0; } }
 html {
   font-family: Helvetica; }
 
 body {
   background-image: url("imgs/bg.jpg");
-  background-position: center fixed;
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat; }
 

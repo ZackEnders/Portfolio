@@ -65,8 +65,35 @@ function displayed() {
 	}
 }
 
+function openLogo() {
+	setTimeout(function() {
+		document.getElementById("logo").style.animation =
+			"grow 0.8s linear, fadeIn 3s linear";
+		document.getElementById("logo").style.display = "inline-block";
+	}, 200);
+}
+
+function closeLogo() {
+	setTimeout(function() {
+		switch ("grow 0.8s linear, fadeIn 3s linear") {
+			case document.getElementById("logo").style.animation:
+				document.getElementById("logo").style.animation =
+					"shrink 0.8s linear, fadeOut .8s linear";
+				setTimeout(function() {
+					document.getElementById("logo").style.display = "none";
+				}, 770);
+				break;
+			default:
+				document.getElementById("logo").style.animation =
+					"grow 0.8s linear, fadeIn 3s linear";
+				document.getElementById("logo").style.display = "inline-block";
+		}
+	}, 200);
+}
 function home() {
 	displayed();
+	closeLogo();
+
 	document.getElementById("cube").style.transform = "rotateY(0deg)";
 	document.getElementById("container").style.transform =
 		"translate(-50%, -50%)";
@@ -74,6 +101,7 @@ function home() {
 
 function aboutMe() {
 	displayed();
+	openLogo();
 	document.getElementById("cube").style.transform = "rotateY(-90deg)";
 	document.getElementById("container").style.transform =
 		"translate(-118%, -48%)";
@@ -83,6 +111,7 @@ function aboutMe() {
 
 function contact() {
 	displayed();
+	openLogo();
 	document.getElementById("cube").style.transform = "rotateY(90deg)";
 	document.getElementById("container").style.transform =
 		"translate(-118%, -48%)";
@@ -91,6 +120,7 @@ function contact() {
 }
 function project1() {
 	displayed();
+	openLogo();
 	document.getElementById("cube").style.transform = "rotateX(-90deg)";
 	document.getElementById("container").style.transform = "translate(12%, -48%)";
 	document.getElementById("content2").style.display = "block";
@@ -98,6 +128,7 @@ function project1() {
 }
 function project2() {
 	displayed();
+	openLogo();
 	document.getElementById("cube").style.transform = "rotateX(90deg)";
 	document.getElementById("container").style.transform = "translate(12%, -48%)";
 	document.getElementById("content2").style.display = "block";
@@ -105,6 +136,7 @@ function project2() {
 }
 function project3() {
 	displayed();
+	openLogo();
 	document.getElementById("cube").style.transform = "rotateY(180deg)";
 	document.getElementById("container").style.transform = "translate(12%, -48%)";
 	document.getElementById("content2").style.display = "block";
