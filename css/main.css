@@ -537,12 +537,18 @@ nav {
   #content1 .contact {
     display: none;
     animation: blur 1s linear, fadeIn 2.2s linear;
-    margin: 0 30px;
+    margin: 0 40px;
     text-align: justify; }
     #content1 .contact .contact-icons {
       position: absolute;
       bottom: 5%;
       left: 50px; }
+      #content1 .contact .contact-icons hr {
+        margin: 30px 0;
+        width: 500px;
+        border: 0;
+        height: 1px;
+        background-color: #88c8bd; }
     #content1 .contact h1 {
       text-align: center;
       font-family: Perpetua; }
@@ -553,22 +559,16 @@ nav {
       text-align: center;
       padding: 0;
       font-size: 14px; }
-      #content1 .contact ul hr {
-        margin: 30px 0;
-        width: 500px;
-        border: 0;
-        height: 1px;
-        background-color: #88c8bd; }
-      #content1 .contact ul a {
-        text-decoration: none;
+      #content1 .contact ul li {
+        display: inline-block;
+        margin: 0 40px;
         text-align: center;
-        color: #ece8e3; }
-        #content1 .contact ul a li {
-          display: inline-block;
-          margin: 0 40px;
+        line-height: 25px; }
+        #content1 .contact ul li a {
+          text-decoration: none;
           text-align: center;
-          line-height: 25px; }
-          #content1 .contact ul a li img {
+          color: #ece8e3; }
+          #content1 .contact ul li a img {
             width: 35px;
             height: 35px; }
 

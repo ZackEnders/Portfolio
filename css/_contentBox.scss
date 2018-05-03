@@ -58,12 +58,19 @@
 	.contact {
 		display: none;
 		animation: blur 1s linear, fadeIn 2.2s linear;
-		margin: 0 30px;
+		margin: 0 40px;
 		text-align: justify;
 		.contact-icons {
 			position: absolute;
 			bottom: 5%;
 			left: 50px;
+			hr {
+				margin: 30px 0;
+				width: 500px;
+				border: 0;
+				height: 1px;
+				background-color: #88c8bd;
+			}
 		}
 		h1 {
 			text-align: center;
@@ -72,27 +79,22 @@
 		p {
 			line-height: 30px;
 		}
+
 		ul {
 			list-style: none;
 			text-align: center;
 			padding: 0;
 			font-size: 14px;
-			hr {
-				margin: 30px 0;
-				width: 500px;
-				border: 0;
-				height: 1px;
-				background-color: #88c8bd;
-			}
-			a {
-				text-decoration: none;
+
+			li {
+				display: inline-block;
+				margin: 0 40px;
 				text-align: center;
-				color: #ece8e3;
-				li {
-					display: inline-block;
-					margin: 0 40px;
+				line-height: 25px;
+				a {
+					text-decoration: none;
 					text-align: center;
-					line-height: 25px;
+					color: #ece8e3;
 					img {
 						width: 35px;
 						height: 35px;
