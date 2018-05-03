@@ -3,10 +3,14 @@
 @import "navbuttons";
 @import "contentBox";
 
+html {
+	font-family: Helvetica;
+}
 body {
-  background-color: #0d0d0d;
+	background-image: url("imgs/bg.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-html {
-  font-family: Helvetica;
-}
